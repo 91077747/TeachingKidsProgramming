@@ -2,11 +2,14 @@ package org.teachingkidsprogramming.section02methods.Variations;
 
 import org.teachingextensions.logo.Tortoise;
 import org.teachingextensions.logo.utils.ColorUtils.PenColors.Reds;
+import org.teachingextensions.virtualproctor.VirtualProctor;
 
 public class Houses2
 {
   public static void main(String[] args)
   {
+    VirtualProctor.setClassName("Palm Digital");
+    VirtualProctor.setName("Victoria");
     Tortoise.show();
     Tortoise.setSpeed(10);
     Tortoise.setX(200);

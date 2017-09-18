@@ -1,6 +1,7 @@
 package org.teachingkidsprogramming.section02methods.Variations;
 
 import org.teachingextensions.logo.Tortoise;
+import org.teachingextensions.logo.utils.ColorUtils.PenColors.Greens;
 import org.teachingextensions.logo.utils.ColorUtils.PenColors.Reds;
 import org.teachingextensions.virtualproctor.VirtualProctor;
 
@@ -18,6 +19,26 @@ public class Houses2
     drawHouse(120);
     drawHouse(90);
     drawHouse(20);
+  }
+  private static void drawHousetrapRoof(int height)
+  {
+    Tortoise.setPenColor(Greens.Chartreuse);
+    Tortoise.move(height);
+    drawTrapRoof();
+    Tortoise.move(50);
+    Tortoise.turn(50);
+    Tortoise.move(20);
+    Tortoise.turn(40);
+    Tortoise.move(10);
+    Tortoise.turn(9);
+    Tortoise.move(10);
+    Tortoise.turn(40);
+    Tortoise.move(20);
+    Tortoise.turn(40);
+    Tortoise.move(90);
+  }
+  private static void drawTrapRoof()
+  {
   }
   private static void drawHouse(int height)
   {

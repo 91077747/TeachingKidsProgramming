@@ -16,12 +16,10 @@ public class TriangleShell
     //      drawTriangle (recipe below) --#5.1
     //
     //      ------------- Recipe for drawTriangle --#5.2
-    //          Do the following 3 times --#3.1
     for (int i = 0; i < 3; i++)
     {
       Tortoise.turn(120);
-      //              Move the tortoise using the current length --#4
-      //              Turn the tortoise 1/3rd of 360 degrees --#2
+      Tortoise.move(length);
       Tortoise.turn(120);
       //          End Repeat --#3.2
     }

@@ -53,7 +53,7 @@ public class DeepDive02Variables
   {
     int age = 11;
     celebrateBirthday();
-    age += 12;
+    age +=              ;
     Assert.assertEquals(12, age);
   }
   @Test

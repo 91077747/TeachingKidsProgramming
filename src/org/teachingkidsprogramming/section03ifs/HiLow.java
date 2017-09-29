@@ -7,29 +7,28 @@ public class HiLow
 {
   public static void main(String[] args)
   {
-    //    Choose a random number between 1 and 100 --#4.1 (fake!) & --#13
-    //    Do the following 8 times --#9
+    int answer = (int) (Math.random() * 100 + 1);
+    //System.out.println("The answer is" + answer);
+    //int answer = 40;
     for (int i = 1; i <= 8; i++)
     {
+      int guess = MessageBox.askForNumericalInput("what is your guess?");
+      if (guess == answer)
+      {
+        Sound.playBeep();
+        MessageBox.showMessage("you Won!!!");
+        break;
+      }
+      else if (guess > answer)
+      {
+        MessageBox.showMessage("too High");
+      }
+      else
+        MessageBox.showMessage("too Low");
+      if (i == 8)
+      {
+        MessageBox.showMessage("You lost");
+      }
     }
-    int guess = MessageBox.askForNumericalInput("what is your guess?");
-    //         If the guess is correct --#4
-    if (guess == 40)
-    {
-      Sound.playBeep();
-      MessageBox.showMessage("you Won!!!");
-    }
-    //               and exit --#10
-    //         Otherwise, if the guess is too high --#6
-    else if (guess > 40)
-    {
-      MessageBox.showMessage("too High");
-    }
-    else
-    {
-      MessageBox.showMessage("too Low");
-    }
-    //    End Repeat --#9.2
   }
-  //    After 8 incorrect guesses tell the user they've lost --#11
 }

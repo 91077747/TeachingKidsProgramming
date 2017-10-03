@@ -18,5 +18,10 @@ public class SequentialExecution01
   public static void myMethod2()
   {
     System.out.println("In myMethod2 #1");
+    myMethod3();
   }
+  public static void myMethod3()
+  {
+    System.out.println("In myMethod3 #1");
+    
 }// end of class

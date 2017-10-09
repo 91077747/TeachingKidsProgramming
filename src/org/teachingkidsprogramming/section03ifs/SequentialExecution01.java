@@ -23,5 +23,5 @@ public class SequentialExecution01
   public static void myMethod3()
   {
     System.out.println("In myMethod3 #1");
-    
-}// end of class
+  }
+// end of class

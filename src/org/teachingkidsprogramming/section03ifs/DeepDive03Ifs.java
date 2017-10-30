@@ -2,6 +2,7 @@ package org.teachingkidsprogramming.section03ifs;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.teachingextensions.logo.utils.EventUtils.MessageBox;
 
 @SuppressWarnings("unused")
 public class DeepDive03Ifs
@@ -20,7 +21,7 @@ public class DeepDive03Ifs
     String bearPoopPlace = "";
     if (true)
     {
-      bearPoopPlace = ___;
+      bearPoopPlace = "woods";
     }
     Assert.assertEquals("woods", bearPoopPlace);
   }
@@ -32,13 +33,13 @@ public class DeepDive03Ifs
     {
       dessert = "ketchup";
     }
-    Assert.assertEquals(___, dessert);
+    Assert.assertEquals("chocolate", dessert);
   }
   @Test
   public void notEverEverEver() throws Exception
   {
     String dessert = "chocolate";
-    if (!_____)
+    if (!true)
     {
       dessert = "ketchup";
     }
@@ -48,7 +49,7 @@ public class DeepDive03Ifs
   public void isThePopeCatholic() throws Exception
   {
     String pope = "";
-    if (_____)
+    if (true)
     {
       pope = "Catholic";
     }
@@ -58,7 +59,7 @@ public class DeepDive03Ifs
   public void trueOrFalse() throws Exception
   {
     String animal = "cat";
-    boolean elephant = _____;
+    boolean elephant = true;
     if (elephant)
     {
       animal = "flat " + animal;
@@ -69,7 +70,7 @@ public class DeepDive03Ifs
   public void letSleepingBabiesLie() throws Exception
   {
     String babySounds = "";
-    boolean sleeping = ______;
+    boolean sleeping = false;
     if (sleeping)
     {
       babySounds = "zzzzzzzzzzzz";
@@ -84,7 +85,7 @@ public class DeepDive03Ifs
   public void howCoachThinks() throws Exception
   {
     String coachSays = "try harder";
-    int percentEffort = ____;
+    int percentEffort = 110;
     if (percentEffort == 110)
     {
       coachSays = "good job";
@@ -95,7 +96,7 @@ public class DeepDive03Ifs
   public void lessThan() throws Exception
   {
     String modeOfTransportation = "";
-    int age = ____;
+    int age = 15;
     if (age < 16)
     {
       modeOfTransportation = "keep walking";
@@ -110,7 +111,7 @@ public class DeepDive03Ifs
   public void greaterThan() throws Exception
   {
     String kidSays = "";
-    int numberOfIceCreams = ____;
+    int numberOfIceCreams = 6;
     if (numberOfIceCreams > 4)
     {
       kidSays = "I think I'm gonna barf";
@@ -125,7 +126,7 @@ public class DeepDive03Ifs
   public void notEqual() throws Exception
   {
     String playerSays = "";
-    int cards = ____;
+    int cards = 52;
     if (cards != 52)
     {
       playerSays = "Not playing with a full deck!";
@@ -140,7 +141,7 @@ public class DeepDive03Ifs
   public void equalsForStrings() throws Exception
   {
     String knockKnock = "";
-    String whosThere = ___;
+    String whosThere = "bananas";
     if (whosThere.equals("bananas"))
     {
       knockKnock = "Who's there?";
@@ -155,8 +156,8 @@ public class DeepDive03Ifs
   public void thisAndThat() throws Exception
   {
     String time = "";
-    int score = ____;
-    int years = ____;
+    int score = 4;
+    int years = 7;
     if (score == 4 && years == 7)
     {
       time = "Presidential";
@@ -167,7 +168,7 @@ public class DeepDive03Ifs
   public void theBeginningOrEnd() throws Exception
   {
     String shoppingList = "";
-    int age = ____;
+    int age = 2;
     if (age <= 2 || 90 <= age)
     {
       shoppingList = "diapers";
@@ -178,7 +179,7 @@ public class DeepDive03Ifs
   public void ifInHighSchool() throws Exception
   {
     String status = "";
-    int age = ____;
+    int age = 16;
     if (age <= 15)
     {
       status = "smarty";
@@ -198,7 +199,7 @@ public class DeepDive03Ifs
   {
     String status = "";
     String animal = "PIG";
-    boolean isWinningKarate = ______;
+    boolean isWinningKarate = false;
     if (animal.equalsIgnoreCase("pig"))
     {
       if (isWinningKarate)
@@ -221,12 +222,26 @@ public class DeepDive03Ifs
     {
       dessert = "ketchup";
     }
-    Assert.assertEquals(___, dessert);
+    Assert.assertEquals("ketchup", dessert);
+  }
+  // test for choose your own Adventure 
+  // our very first test
+  //
+  @Test
+  public void cyoaInputTest() throws Exception
+  {
+    String result = MessageBox.askForTextInput("Do you want to 'wake up' or 'Explore' the dream");
+    //Test that user entered "wake up"
+    Assert.assertEquals(result, "wake up");
+  }
+  @Test
+  public void cyoaInputTest2() throws Exception
+  {
+    String result = MessageBox.askForTextInput("Do you want to 'wake up' or 'Explore' the dream");
+    Assert.assertEquals(result, "explore");
   }
   /**
    * Ignore the following, It's needed to run the deep dive
-   * 
-   * 
    * 
    * 
    * 

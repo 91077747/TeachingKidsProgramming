@@ -8,12 +8,14 @@ public class PentagonCrazy
   {
     Tortoise.show();
     //    Make the tortoise move as fast as possible --#3
+    Tortoise.setSpeed(10);
     //    createColorPalette (recipe below) --#8.1
+    createColorPalatte();
     //
     //    ------------- Recipe for createColorPalette --#8.2
     //    Add steel blue to the color wheel --#7
     //    Add dark orchid to the color wheel --#11
-    //    Add dark slate blue to the color wheel --#12
+    //    Add dark slate bluAsk the user how many integers, N,  they’d like to print, where N is number of integers
     //    Add teal to the color wheel --#13
     //    Add indigo to the color wheel --#14
     //    ------------- End of createColorPalette recipe --#8.3

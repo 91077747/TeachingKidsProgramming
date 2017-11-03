@@ -11,9 +11,8 @@ public class DigiFlower
   public static void main(String[] args)
   {
     Tortoise.show();
-    Tortoise.setSpeed(10);
+    Tortoise.setSpeed(4);
     Tortoise.getBackgroundWindow().setBackground(PenColors.Grays.Silver);
-    //    Make the line the tortoise draws 3 pixels wide --#15
     Tortoise.setPenWidth(3);
     for (int i = 0; i < 15; i++)
     {

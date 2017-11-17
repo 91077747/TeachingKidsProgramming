@@ -13,7 +13,7 @@ public class DeepDive04Mastery
   //  Step 2: READ the name of the method that failed
   //  Step 3: FILL IN the blank (___) to make that method pass
   //  Step 4: SAY at least one thing you just learned
-  //  Step 5: GO to the next method
+  //  
   //  IMPORTANT - Do NOT change anything except the blank (___)//  
   //  
   @Test

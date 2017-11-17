@@ -33,10 +33,10 @@ public class DigiFlower
   }
   private static void createColorPalette()
   {
-    Color color1 = PenColors.Reds.Red;
-    Color color2 = PenColors.Oranges.DarkOrange;
-    Color color3 = PenColors.Yellows.Gold;
-    Color color4 = PenColors.Yellows.Yellow;
+    Color color1 = PenColors.Whites.AliceBlue;
+    Color color2 = PenColors.Pinks.LightPink;
+    Color color3 = PenColors.Greens.DarkCyan;
+    Color color4 = PenColors.Whites.AliceBlue;
     ColorWheel.addColor(color1);
     ColorWheel.addColor(color2);
     ColorWheel.addColor(color3);
